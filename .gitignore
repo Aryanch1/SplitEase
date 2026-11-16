@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+backend/target/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
