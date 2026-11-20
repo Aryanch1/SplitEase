@@ -16,6 +16,7 @@ export const API_BASE = (process.env.EXPO_PUBLIC_API_URL ?? '').trim().replace(/
 /**
  * Set to true once the Firebase project for SplitEase exists and the
  * values in lib/firebase.ts / lib/firebase.native.ts are the real web
- * config. Until then the app runs fully in local/guest mode.
+ * config. Project splitease-76c70 was created 2026-11-16 with
+ * Email/Password + Google enabled — full accounts mode is on.
  */
-export const firebaseConfigured = false;
+export const firebaseConfigured = true;

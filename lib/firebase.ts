@@ -5,12 +5,12 @@ import { getFirestore } from 'firebase/firestore';
 /**
  * Firebase wiring for SplitEase — web.
  *
- * TODO: no Firebase project exists for SplitEase yet. The publish run
- * creates one (project name "SplitEase", under aryanch99999@gmail.com,
- * Email/Password + Google sign-in, email-link OFF, the app's Vercel
- * domain authorized) and replaces the placeholder values below with the
- * real web config, then flips `firebaseConfigured` to true in
- * lib/config.ts. Until then the app runs fully in local/guest mode.
+ * Project "SplitEase" (splitease-76c70), created 2026-11-16 under
+ * aryanch99999@gmail.com. Email/Password + Google sign-in enabled
+ * (email-link OFF); the app's Vercel domain is added to authorized
+ * domains once the deploy exists. Flip `firebaseConfigured` to true in
+ * lib/config.ts once this config is in place (done) — the app then runs
+ * in full accounts mode.
  *
  * The config values below are Firebase's public app identifiers — they
  * are designed to ship in client code. Access is controlled by Firebase
@@ -28,16 +28,16 @@ import { getFirestore } from 'firebase/firestore';
  * each platform always gets one consistent set of Firebase modules.
  */
 const firebaseConfig = {
-  apiKey: 'TODO-SPLITEASE-FIREBASE-API-KEY',
-  authDomain: 'TODO-SPLITEASE.firebaseapp.com',
-  projectId: 'TODO-SPLITEASE',
-  storageBucket: 'TODO-SPLITEASE.firebasestorage.app',
-  messagingSenderId: '000000000000',
-  appId: '1:000000000000:web:0000000000000000000000',
+  apiKey: 'AIzaSyD3Urcim27_m-8qiD0a5A-f4wA3Rf9Gsmc',
+  authDomain: 'splitease-76c70.firebaseapp.com',
+  projectId: 'splitease-76c70',
+  storageBucket: 'splitease-76c70.firebasestorage.app',
+  messagingSenderId: '1061356725847',
+  appId: '1:1061356725847:web:d96f24b38ad1c0d182e512',
 };
 
 /** OAuth web client ID for the native Google Sign-In flow (not a secret). */
-export const GOOGLE_WEB_CLIENT_ID = 'TODO-SPLITEASE-GOOGLE-WEB-CLIENT-ID';
+export const GOOGLE_WEB_CLIENT_ID = '1061356725847-ibpaavoa2es25c7i6c7s7p8snqgpq1gh.apps.googleusercontent.com';
 
 export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
